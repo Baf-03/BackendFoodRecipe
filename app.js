@@ -5,7 +5,7 @@ const router = require("./Routes");
 require("dotenv").config();
 
 const app = express();
-const PORT =5000;
+const PORT = process.env.PORT || 5000;
 const DB_URI=process.env.DBURI
 
 mongoose.connect(DB_URI)
